@@ -1,11 +1,11 @@
 // Created by Danielle Bagaforo Meer
-// Let's Connect : https://www.linkedin.com/in/algorexph/
+// Let's Connect : https://www.linkedin.com/in/jandiaz/
 
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
-import { ArrowRight } from 'lucide-react';
+import { Terminal, ArrowRight, Mail, Github, Linkedin } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -17,12 +17,31 @@ export default function Home() {
           <div className="space-y-6 text-center lg:text-left">
             <p className="text-purple-400">LET'S COLLABORATE</p>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
-              ROBBY POMBO, <br />
-              AI ENGINEER
+              Jeremie Diaz,<br />
+              AI ENGINEER/ DATA SCIENTIST
             </h1>
             <p className="text-gray-400 max-w-xl mx-auto lg:mx-0"> 
-            I'm a civil-engineer-turned-ai-professional with experience in Analytics and AI Engineering within insurance, banking, and consultancy sector, leveraging technical background to deliver data driven solutions. I'm also an advocate in campaigning #DSAIForGood through volunteer projects (i.e. Omdena and Singapore International Foundation), maximizing the power of data to address social issues and make a positive impact.
+            Are you looking for an AI engineer who can deliver innovative solutions, optimize business processes, and drive measurable outcomes? Here's why I could be the perfect fit for your team:</p>
+
+<p className="text-gray-400 max-w-xl mx-auto lg:mx-0"><b>Core Competencies</b></p>
+<p className="text-gray-400 max-w-xl mx-auto lg:mx-0"> AI and Machine Learning Expertise: Proficient in designing, developing, and deploying machine learning models, including NLP, computer vision, and predictive analytics.
+Chatbot Development: Experience building conversational AI systems for customer support, logistics, and hospitality, capable of analyzing queries, assessing risks, and forecasting.
+Data-Driven Problem Solving: Skilled in collecting, preprocessing, and analyzing large datasets to uncover insights and improve decision-making processes.
+Sales Forecasting: Expertise in developing AI tools to analyze sales data and predict trends, ensuring businesses stay ahead of market demands.</p>
+<p className="text-gray-400 max-w-xl mx-auto lg:mx-0"><b>Technological Skills</b></p>
+<p className="text-gray-400 max-w-xl mx-auto lg:mx-0"> Programming Languages: Python, JavaScript, and web development technologies.
+Libraries and Frameworks: TensorFlow, PyTorch, scikit-learn, Keras, and Hugging Face.
+Database Management: SQL, NoSQL, and data engineering with tools like Apache Spark.</p>
+<p className="text-gray-400 max-w-xl mx-auto lg:mx-0"><b>Key Achievements</b></p>
+<p className="text-gray-400 max-w-xl mx-auto lg:mx-0"> Developed a risk assessment chatbot for logistics managers, significantly reducing delays and optimizing route planning.
+Created a hotel booking assistant that personalizes user experiences based on preferences and budget.
+Built a sales forecasting AI system, enabling clients to make data-backed decisions with 90% accuracy.
+Successfully implemented customer support chatbots for Hitachi Energy, improving response time and customer satisfaction.</p>
+<p className="text-gray-400 max-w-xl mx-auto lg:mx-0"><b>Why Hire Me?</b></p>
+<p className="text-gray-400 max-w-xl mx-auto lg:mx-0"> I thrive at the intersection of technology and business, crafting AI solutions tailored to organizational goals. My blend of technical expertise, hands-on experience, and innovative thinking ensures that I deliver scalable and impactful solutions.
+Let’s create something extraordinary together. Reach out, and let’s discuss how I can help your organization achieve its AI goals!
             </p> 
+            <br />
             <Link href="/projects">
               <Button className="bg-purple-600 hover:bg-purple-700">
                 VIEW MY PROJECTS
@@ -33,7 +52,7 @@ export default function Home() {
           <div className="flex justify-center items-center">
             <div className="relative w-72 h-72 sm:w-96 sm:h-96">
               <Image
-                src="https://media.licdn.com/dms/image/v2/C4D03AQH9eNaI91LhcQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1655685408374?e=1742428800&v=beta&t=WmUMFQHRQGkFRdAjsKyvdwUlxUTE4DTqEAWCJHIG6Io" // Change to your Photo Please
+                src="https://github.com/jaydiaz2012/Jeremie_Diaz_AI_Portfolio/blob/main/images/jay_hiking.jpg" // Change to your Photo Please
                 alt="Profile"
                 fill
                 className="rounded-3xl object-cover"
@@ -84,25 +103,25 @@ export default function Home() {
 
 const projects = [
   { 
-    title: "Course Recommender System", 
-    image: "https://www.globalcareercounsellor.com/blog/wp-content/uploads/2018/05/Online-Career-Counselling-course.jpg",
-    problem: "Businesses often struggle to deliver personalized experiences to customers due to inefficient recommendation algorithms, leading to irrelevant product suggestions, decreased engagement, and lost sales opportunities. Customers may feel overwhelmed by choices and disengage when recommendations aren’t tailored to their preferences.",
-    solution: "Recommender System uses advanced AI algorithms to provide highly accurate, personalized product recommendations based on individual user behavior and preferences. By analyzing user data in real-time, it enhances the shopping experience, increases conversion rates, and boosts customer satisfaction by delivering relevant and timely suggestions",
-    link : "https://github.com/Robby1421/RecommenderSystem"
+    title: "SalesX AI", 
+    image: "https://github.com/jaydiaz2012/Jeremie_Diaz_AI_Portfolio/blob/jeremie_diaz/app/images/s-o-c-i-a-l-c-u-t-7KkDiSs5UdQ-unsplash.jpg?w=500&fit=crop",
+    problem: "Businesses often struggle to make accurate sales forecasts, leading to inefficient planning and missed growth opportunities. Analyzing historical sales data and predicting future trends is time-consuming and requires specialized expertise.",
+    solution: "SalesX simplifies sales forecasting by using advanced analytics to process sales data and generate precise forecasts for the next 12 months. With user-friendly insights and actionable predictions, businesses can make data-driven decisions, optimize strategies, and stay ahead of the competition.",    
+    link : "https://kbbcoax7ztmutmnorjanlw.streamlit.app/"
   },
   {
-    title: "Parcel Rescue AI",
-    image: "https://4623783.fs1.hubspotusercontent-na1.net/hub/4623783/hubfs/What%20is%20considered%20small%20parcel%3F.jpg?height=630&name=What%20is%20considered%20small%20parcel%3F.jpg",
-    problem: "Damaged parcels during transit are a common issue in the logistics and e-commerce industries, leading to customer dissatisfaction, financial losses, and reputational damage. Without an effective system for identifying and managing damaged packages, businesses struggle to quickly address these issues and minimize their impact.",
-    solution: "Parcel Rescue uses AI-driven technology to identify and assess damaged parcels in real-time, providing a streamlined process for reporting, tracking, and managing damaged goods. This ensures quicker resolution, reduces customer complaints, and helps companies maintain high standards of service by minimizing losses from damaged shipments.",
-    link : "https://github.com/Robby1421/parcel-rescue"
+    title: "Web Analytics AI",
+    image: "https://github.com/jaydiaz2012/Jeremie_Diaz_AI_Portfolio/blob/jeremie_diaz/app/images/andy-kelly-0E_vhMVqL9g-unsplash.jpg?w=500&fit=crop",
+    problem: "Businesses often face challenges in extracting meaningful insights from complex web analytics datasets. Traditional tools require significant manual effort and expertise, leading to missed opportunities and inefficiencies in decision-making.",
+    solution: "Web Analytics X leverages AI-powered tools built on OpenAI's Swarm and Firecrawl frameworks to transform web analytics. The AI agent performs advanced data analysis, generates visualizations, and delivers actionable insights and reports. This empowers businesses to make smarter, data-driven decisions with ease and efficiency.",
+    link : "https://github.com/jaydiaz2012/AI_First_Day_6_AI_Swarm"
   },
   {
-    title: "Data Governance Agentic AI",
-    image: "https://d3an9kf42ylj3p.cloudfront.net/uploads/2023/04/mk_datagovernancebestpractices-april-23.jpg",
-    problem: "Organizations struggle to maintain data governance at scale, facing challenges such as inconsistent data quality, complex compliance requirements, and the risk of unauthorized access. These issues can lead to data breaches, regulatory fines, and inefficiencies in data management.",
-    solution: "Agentic AI’s Data Governance Agent automates data governance tasks, ensuring compliance with regulations, enforcing access controls, and improving data quality through real-time monitoring. By utilizing AI-driven insights, it streamlines data management, tracks data lineage, and helps organizations maintain secure and compliant data ecosystems.",
-    link : "https://github.com/Robby1421/AIR_AI_Engineering_Course_Submission/blob/main/Day_6/DataGovernanceAgent.ipynb"
+    title: "RouteX",
+    image: "https://github.com/jaydiaz2012/Jeremie_Diaz_AI_Portfolio/blob/jeremie_diaz/app/images/marvin-meyer-SYTO3xs06fU-unsplash.jpg?w=500&fit=crop",
+    problem: "Managing delivery routes can be complex and inefficient, leading to increased costs, delays, and dissatisfied customers. Businesses often lack the tools to optimize routes effectively for time, cost, and resource utilization.",
+    solution: "RouteX streamlines delivery logistics by analyzing and optimizing delivery routes in real-time. Using advanced algorithms, the app reduces travel time, cuts costs, and ensures timely deliveries, enabling businesses to enhance operational efficiency and customer satisfaction.",
+    link : "https://k4dnuwvsmdrhzbd8g8rkvh.streamlit.app/"    
   },
   
 ];
