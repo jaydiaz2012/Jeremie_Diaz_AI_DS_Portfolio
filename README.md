@@ -1,1 +1,1 @@
-# Jeremie_Diaz_AI_DS_Portfolio
+# AI-Republic-Student-Portfolio-Template
